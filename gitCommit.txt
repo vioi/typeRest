@@ -27,3 +27,12 @@ git push -u origin master 将本地仓库当前分支master推送到远程仓库
 关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
 
 此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
+git clone 克隆远程仓库到本地
+
+创建并管理分支：
+git checkout -b mybranch  创建并切换到到分支mybranch;-b参数表示创建并切换，相当于以下两条命令
+git branch mybranch 创建分支
+git checkout mybranch 切换分支
+git branch 查看当前分支
+
+
