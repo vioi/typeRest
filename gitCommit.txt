@@ -51,3 +51,7 @@ Git鼓励大量使用分支：
 如果要强制禁用Fast forward模式，Git就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息。
 --no-ff参数，表示禁用Fast forward
 这次合并要创建一个新的commit，所以加上-m参数，把commit描述写进去
+（git status指令可以将工作区当前分支新增或修改的内容存储隐藏起来，
+    可以通过git stash list 查看刚刚的工作现场stash
+    git stash pop恢复工作现场并删除stash内容
+）
