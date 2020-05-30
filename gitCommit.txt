@@ -8,7 +8,7 @@ git log 查看提交记录的日志
 在Git中，用HEAD表示当前版本，上一个版本就是HEAD^，上上一个版本就是HEAD^^，当^然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。
 git reset --hard HEAD^ 回退到上一个版本
 git reflog 记录
-git reset HEAD <file>可以把暂存区的上一次修改撤销
+git reset HEAD <file>  可以把暂存区的上一次修改撤销(add或者rm指令)
     git reset命令既可以回退版本，也可以把暂存区的修改回退到工作区
 git checkout -- readme.txt 将工作区的内容还原至和暂存区一致
 
