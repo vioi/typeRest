@@ -32,7 +32,24 @@ git clone 克隆远程仓库到本地
 创建并管理分支：
 git checkout -b mybranch  创建并切换到到分支mybranch;-b参数表示创建并切换，相当于以下两条命令
 git branch mybranch 创建分支
-git checkout mybranch 切换分支
+git switch mybranch 切换分支
 git branch 查看当前分支
+git merge mybranch 把mybranch 分支的工作内容合并到master
+合并完成后就可以放心的删除mybranch分支：git branch -d mybranch
+
+小结：
+Git鼓励大量使用分支：
+
+查看分支：git branch
+
+创建分支：git branch <name>
+
+切换分支：git checkout <name>或者git switch <name>
+
+创建+切换分支：git checkout -b <name>或者git switch -c <name>
+
+合并某分支到当前分支：git merge <name>
+
+删除分支：git branch -d <name>
 
 
