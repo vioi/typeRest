@@ -63,4 +63,21 @@ Bug分支： 当有一个bug急需要修改，但是当前mybr分支的任务还
 ）
 git cherry-pick <版本号> 让我们能复制一个特定的提交到当前分支
 
-   
+
+
+/对于先建的远程仓库，本地关联后push推送报错的问题，因为远程仓库创建时选中了创建readme.md文件
+推送远程仓库时，发现内容不一致，股推送失败。可以通过pull 拉取并合并远程仓库的内容到本地
+/
+push   推送本地修改分支至远程git仓库
+git push -u origin feature-wxDemo
+　　
+
+fetch与pull
+
+fetch是将远程主机的最新内容拉到本地，不进行合并
+
+git fetch origin master
+　　
+pull 则是将远程主机的master分支最新内容拉下来后与当前本地分支直接合并 fetch+merge
+
+git pull origin master
